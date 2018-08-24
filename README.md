@@ -5,7 +5,7 @@ alpine for kubectl
 ## push 
 ```shell
 docker build --pull -t imscc/alpine:latest .
-docker push -t imscc/alpine:latest 
+docker push imscc/alpine:latest 
 ```
 
 # donwload
