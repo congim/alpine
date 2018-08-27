@@ -14,6 +14,7 @@ kubectl cluster-info
 
 # Dockerfile for sslocal
 
+alpine golang for sslocal
 
 donwload
 
