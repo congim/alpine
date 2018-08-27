@@ -1,25 +1,28 @@
-# alpine
+# alpine for kubectl 
+
 alpine for kubectl 
 
-
-## push 
-```shell
-docker build --pull -t imscc/alpine:latest .
-docker push imscc/alpine:latest 
-```
-
-# donwload
+donwload
 
 ```shell
 docker pull imscc/alpine
+
+## test
+docker run --name kubeclient --rm  -it -v  ~/.kube/:/root/.kube  imscc/alpine_kubectl:latest /bin/sh
+kubectl cluster-info
 ```
 
-### Dockerfile for sslocal
+# Dockerfile for sslocal
+
+
+donwload
 
 ```shell
 docker pull  imscc/alpine_go:sslocal
 docker run -it --rm --name go imscc/alpine_go:sslocal /bin/sh
 ```
+
+use
 
 ```shell
 ## shadowsocks2 config
